@@ -14,7 +14,6 @@ const employeeSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-employeeSchema.index({ email: 1 });
 employeeSchema.index({ createdBy: 1 });
 
 module.exports = mongoose.model('Employee', employeeSchema);

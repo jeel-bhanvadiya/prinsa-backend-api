@@ -12,6 +12,4 @@ const superAdminSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-superAdminSchema.index({ email: 1 });
-
 module.exports = mongoose.model('SuperAdmin', superAdminSchema);
